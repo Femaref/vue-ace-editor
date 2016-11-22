@@ -59,6 +59,7 @@ module.exports = {
         editor.on('change',function () {
             vm.content = editor.getValue();
             vm.contentBackup = vm.content;
+            vm.$dispatch("change", vm.content);
         });
 
     }
