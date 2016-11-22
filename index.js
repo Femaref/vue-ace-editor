@@ -1,9 +1,5 @@
 var ace = require('brace');
 
-require(['emmet/emmet'],function (data) {
-    window.emmet = data.emmet;
-});
-
 var init = false;
 
 module.exports = {
