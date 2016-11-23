@@ -55,6 +55,8 @@ module.exports = {
         editor.setTheme('ace/theme/'+theme);
 
         editor.setValue(this.content,1);
+        
+        vm.$dispatch("vue-ace-editor:ready", editor);
 
         editor.on('change',function () {
             vm.content = editor.getValue();
