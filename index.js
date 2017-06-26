@@ -64,5 +64,8 @@ module.exports = {
             vm.$dispatch("change", vm.content);
         });
 
+    },
+    beforeDestroy: function() {
+        this.editor.destroy();
     }
 }
